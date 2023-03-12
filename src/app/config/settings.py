@@ -4,7 +4,7 @@ from distutils.util import strtobool
 SECRET_KEY = os.getenv("SECRET_KEY", None)
 
 SERVER_NAME = os.getenv(
-    "SERVER_NAME", "localhost:{0}".format(os.getenv("DOCKER_WEB_PORT", "8000"))
+    "SERVER_NAME", "localhost:{0}".format(os.getenv("DOCKER_WEB_PORT", "8192"))
 )
 
 # Redis

@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  remote_user: adminfarmng
+  become: true
+  tasks:
+    - name: Replace /etc/docker/daemon.json
+      copy:
+        src: files/daemon.json
+        dest: /etc/docker/daemon.json
+        force: yes
